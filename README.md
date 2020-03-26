@@ -59,3 +59,5 @@ docker run -v /home/vpereira/.config/osc/oscrc:/home/puller/.config/osc/oscrc -v
 :git_branch: master
 
 ```
+
+Inspired on https://github.com/openSUSE/obs-tools/tree/master/pull_request_package
