@@ -33,7 +33,6 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.9-java)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.3)
@@ -42,12 +41,10 @@ GEM
       faraday (~> 0.8, < 1.0)
     slop (4.6.2)
     thread_safe (0.3.6)
-    thread_safe (0.3.6-java)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
 
 PLATFORMS
-  java
   ruby
 
 DEPENDENCIES
@@ -55,4 +52,4 @@ DEPENDENCIES
   slop
 
 BUNDLED WITH
-   1.17.3
+   2.2.8

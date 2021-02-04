@@ -1,11 +1,11 @@
 FROM opensuse/tumbleweed
 
 RUN zypper  --non-interactive --quiet ref \
- && zypper -n in osc ruby2.6 ruby2.6-devel git gcc make autoconf zlib-devel libxml2-devel libxslt-devel
+ && zypper -n in osc ruby2.7 ruby2.7-devel git gcc make autoconf zlib-devel libxml2-devel libxslt-devel
 RUN gem install bundler
-RUN bundle.ruby2.6 config build.nokogiri --use-system-libraries
+RUN bundle.ruby2.7 config build.nokogiri --use-system-libraries
 COPY .  /home/puller/pull_request_package
-RUN cd /home/puller/pull_request_package && bundler.ruby2.6 install
+RUN cd /home/puller/pull_request_package && bundler.ruby2.7 install
 
 RUN useradd -ms /bin/bash puller
 
